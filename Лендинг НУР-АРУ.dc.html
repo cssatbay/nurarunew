@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>НУР-АРУ — дезинфекция, дезинсекция и дератизация в Атырау</title>
+<meta name="description" content="Профессиональная дезинфекция, дезинсекция и дератизация в Атырау. 10+ лет опыта, 500+ объектов, официальный договор и гарантия. Выезд в день обращения.">
+<meta name="theme-color" content="#047857">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; overflow-x: hidden; }
+  ::selection { background: #A7F3D0; color: #064E3B; }
+  a, button { -webkit-tap-highlight-color: transparent; }
+  a:focus-visible, button:focus-visible { outline: 2px solid #059669; outline-offset: 3px; border-radius: 8px; }
+  @keyframes nuaScrollL { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes nuaScrollR { from { transform: translateX(-50%); } to { transform: translateX(0); } }
+  @keyframes nuaFloatA { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-22px) rotate(2deg); } }
+  @keyframes nuaFloatB { 0%,100% { transform: translateY(0) rotate(3deg); } 50% { transform: translateY(-16px) rotate(-3deg); } }
+  .nua-marq { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+  .nua-track { display: flex; gap: 22px; width: max-content; }
+  .nua-marq:hover .nua-track { animation-play-state: paused; }
+
+  /* ---- Fluid typography (overrides inline desktop sizes on smaller screens) ---- */
+  .nua-h1 { font-size: clamp(34px, 6.4vw, 60px) !important; }
+  .nua-h2 { font-size: clamp(27px, 4.6vw, 42px) !important; }
+  .nua-hero-sub { font-size: clamp(16px, 2.6vw, 19px) !important; }
+
+  /* ---- Interactive states (inline style-hover is not supported by the runtime) ---- */
+  .nua-nav-link { transition: color .2s ease; }
+  .nua-nav-link:hover { color: #047857 !important; }
+  .nua-btn-primary { transition: background .2s ease, transform .15s ease, box-shadow .2s ease; }
+  .nua-btn-primary:hover { background: #065F46 !important; transform: translateY(-1px); }
+  .nua-btn-primary:active { transform: translateY(0); }
+  .nua-btn-wa { transition: border-color .2s ease, background .2s ease, transform .15s ease; }
+  .nua-btn-wa:hover { border-color: #25D366 !important; background: #F0FDF4 !important; transform: translateY(-1px); }
+  .nua-btn-mint { transition: background .2s ease, transform .15s ease; }
+  .nua-btn-mint:hover { background: #34D399 !important; transform: translateY(-1px); }
+  .nua-card { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
+  .nua-card:hover { transform: translateY(-4px); box-shadow: 0 20px 44px -20px rgba(11,18,32,.2) !important; border-color: #D7E5DE !important; }
+  .nua-card-dark { transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease; }
+  .nua-card-dark:hover { transform: translateY(-4px); border-color: #2E4160 !important; box-shadow: 0 24px 48px -22px rgba(0,0,0,.55) !important; }
+  .nua-contact-card { transition: border-color .2s ease, transform .15s ease; }
+  .nua-contact-card:hover { border-color: #34D399 !important; transform: translateY(-2px); }
+  .nua-faq-btn:hover span:first-child { color: #047857 !important; transition: color .2s ease; }
+
+  /* ---- Lead form ---- */
+  .nua-input { width: 100%; padding: 15px 17px; background: #0F1A2E; border: 1px solid #1E2A40; border-radius: 12px; color: #fff; font: 600 15px 'Manrope', system-ui, sans-serif; transition: border-color .2s ease; }
+  .nua-input::placeholder { color: #64748B; font-weight: 500; }
+  .nua-input:focus { border-color: #34D399; outline: none; }
+
+  /* ---- Scroll reveal (activated by JS; without JS everything stays visible) ---- */
+  html.nua-io .nua-rev { opacity: 0; transform: translateY(22px); transition: opacity .7s ease, transform .7s cubic-bezier(.22,.61,.36,1); }
+  html.nua-io .nua-rev.nua-in { opacity: 1; transform: none; }
+
+  /* ---- Responsive ---- */
+  .nua-burger { display: none; }
+  .nua-mobile-menu { display: none; }
+
+  @media (max-width: 1120px) {
+    .nua-float { display: none !important; }
+  }
+  @media (max-width: 1060px) {
+    .nua-nav { display: none !important; }
+    .nua-burger { display: inline-flex !important; }
+    .nua-mobile-menu { display: block; }
+    .nua-about-top { grid-template-columns: 1fr !important; gap: 36px !important; }
+    .nua-grid-3, .nua-grid-3t { grid-template-columns: 1fr 1fr !important; }
+    .nua-grid-lic { grid-template-columns: repeat(3, 1fr) !important; }
+    .nua-steps { grid-template-columns: 1fr 1fr !important; row-gap: 44px !important; }
+    .nua-steps-line { display: none !important; }
+  }
+  @media (max-width: 900px) {
+    .nua-head-phone { display: none !important; }
+    .nua-foot-grid { grid-template-columns: 1fr !important; gap: 44px !important; }
+  }
+  @media (max-width: 700px) {
+    .nua-sec { padding: 64px 20px !important; }
+    .nua-sec-y { padding: 64px 0 !important; }
+    .nua-hero { padding: 52px 20px 64px !important; }
+    .nua-foot { padding: 64px 20px 32px !important; }
+    .nua-grid-2, .nua-grid-2b, .nua-grid-3, .nua-grid-3t, .nua-hero-stats, .nua-steps, .nua-foot-cards { grid-template-columns: 1fr !important; }
+    .nua-grid-lic { grid-template-columns: repeat(2, 1fr) !important; }
+    .nua-methods-strip { padding: 24px 20px !important; }
+    .nua-methods-row { flex-direction: column !important; align-items: flex-start !important; gap: 16px !important; }
+    .nua-methods-grid { grid-template-columns: 1fr !important; min-width: 0 !important; width: 100% !important; }
+    .nua-hero-stats { gap: 12px !important; margin-top: 44px !important; }
+    .nua-cta-row { width: 100%; }
+    .nua-cta-row a { flex: 1 1 100%; justify-content: center; }
+    .nua-head-cta { padding: 10px 15px !important; font-size: 13px !important; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .nua-track, .nua-float { animation: none !important; }
+    html.nua-io .nua-rev { opacity: 1 !important; transform: none !important; transition: none !important; }
+    .nua-card, .nua-card-dark, .nua-btn-primary, .nua-btn-wa, .nua-btn-mint, .nua-contact-card { transition: none !important; }
+  }
+</style>
+<script src="./image-slot.js"></script>
+</helmet>
+
+<div style="background:#FFFFFF; font-family:'Manrope', system-ui, sans-serif; color:#0F172A;">
+
+  <!-- ============ STICKY HEADER ============ -->
+  <header style="position:sticky; top:0; z-index:50; background:rgba(255,255,255,.82); backdrop-filter:blur(12px); border-bottom:1px solid #ECEFF3;">
+    <div style="max-width:1180px; margin:0 auto; padding:14px 28px; display:flex; align-items:center; justify-content:space-between; gap:24px;">
+      <a href="#top" style="display:flex; align-items:center; text-decoration:none; flex-shrink:0;">
+        <img src="assets/Logo%20Nur%20Aru/craiyon_235217_image%201.png" alt="НУР-АРУ — дезинфекция" style="height:44px; width:auto; display:block;">
+      </a>
+      <nav class="nua-nav" style="display:flex; align-items:center; gap:30px;">
+        <a href="#about" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">О компании</a>
+        <a href="#services" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">Услуги</a>
+        <a href="#tech" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">Технологии</a>
+        <a href="#steps" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">Этапы</a>
+        <a href="#license" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">Лицензии</a>
+        <a href="#clients" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">Клиенты</a>
+        <a href="#faq" class="nua-nav-link" style="font-size:15px; font-weight:600; color:#516076; text-decoration:none;">FAQ</a>
+      </nav>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <a href="tel:87027579130" class="nua-head-phone" style="font-size:15px; font-weight:700; color:#0B1220; text-decoration:none; white-space:nowrap;">8 702 757 91 30</a>
+        <a href="#contacts" class="nua-btn-primary nua-head-cta" style="display:inline-flex; align-items:center; padding:11px 20px; background:#047857; color:#fff; border-radius:11px; font-size:14px; font-weight:700; text-decoration:none; box-shadow:0 8px 18px -8px rgba(4,120,87,.6);">Оставить заявку</a>
+        <button class="nua-burger" onClick="{{ toggleMenu }}" aria-label="Открыть меню" style="display:none; width:42px; height:42px; align-items:center; justify-content:center; background:#fff; border:1px solid #E2E8F0; border-radius:11px; cursor:pointer; color:#0B1220; padding:0; flex-shrink:0;">
+          <span style="{{ burgerIcon }}"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></span>
+        </button>
+      </div>
+    </div>
+    <div class="nua-mobile-menu">
+      <div style="{{ menuPanel }}">
+        <div style="padding:8px 20px 20px; display:flex; flex-direction:column; border-top:1px solid #EEF2F6;">
+          <a href="#about" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none; border-bottom:1px solid #F1F5F9;">О компании</a>
+          <a href="#services" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none; border-bottom:1px solid #F1F5F9;">Услуги</a>
+          <a href="#tech" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none; border-bottom:1px solid #F1F5F9;">Технологии</a>
+          <a href="#steps" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none; border-bottom:1px solid #F1F5F9;">Этапы</a>
+          <a href="#license" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none; border-bottom:1px solid #F1F5F9;">Лицензии</a>
+          <a href="#clients" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none; border-bottom:1px solid #F1F5F9;">Клиенты</a>
+          <a href="#faq" onClick="{{ closeMenu }}" style="padding:13px 4px; font-size:16px; font-weight:700; color:#0B1220; text-decoration:none;">FAQ</a>
+          <a href="tel:87027579130" onClick="{{ closeMenu }}" style="margin-top:12px; display:flex; align-items:center; justify-content:center; gap:9px; padding:13px 18px; background:#F8FAFC; border:1px solid #E8EDF2; border-radius:12px; font-size:15px; font-weight:800; color:#0B1220; text-decoration:none;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0122 16.92z"/></svg>
+            8 702 757 91 30
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section id="top" class="nua-hero" style="position:relative; overflow:hidden; background:radial-gradient(120% 80% at 50% -20%, #ECFDF5 0%, #F8FAFC 46%, #FFFFFF 100%); padding:84px 28px 96px;">
+    <img class="nua-float" src="assets/craiyon_115522_image.png" alt="" aria-hidden="true" style="position:absolute; left:2%; top:90px; width:118px; opacity:.95; filter:drop-shadow(0 20px 30px rgba(6,95,70,.22)); animation:nuaFloatA 7s ease-in-out infinite; pointer-events:none; z-index:1;">
+    <img class="nua-float" src="assets/craiyon_120150_image.png" alt="" aria-hidden="true" style="position:absolute; left:5%; top:300px; width:104px; opacity:.92; filter:drop-shadow(0 20px 30px rgba(6,95,70,.22)); animation:nuaFloatB 8.5s ease-in-out infinite; animation-delay:-1.5s; pointer-events:none; z-index:1;">
+    <img class="nua-float" src="assets/craiyon_115732_image.png" alt="" aria-hidden="true" style="position:absolute; left:1%; top:470px; width:128px; opacity:.9; filter:drop-shadow(0 20px 30px rgba(6,95,70,.22)); animation:nuaFloatA 9s ease-in-out infinite; animation-delay:-3s; pointer-events:none; z-index:1;">
+    <img class="nua-float" src="assets/craiyon_115823_image.png" alt="" aria-hidden="true" style="position:absolute; right:2%; top:96px; width:112px; opacity:.95; filter:drop-shadow(0 20px 30px rgba(6,95,70,.22)); animation:nuaFloatB 7.5s ease-in-out infinite; animation-delay:-1s; pointer-events:none; z-index:1;">
+    <img class="nua-float" src="assets/craiyon_115914_image.png" alt="" aria-hidden="true" style="position:absolute; right:3%; top:360px; width:120px; opacity:.92; filter:drop-shadow(0 20px 30px rgba(6,95,70,.22)); animation:nuaFloatA 8s ease-in-out infinite; animation-delay:-2.5s; pointer-events:none; z-index:1;">
+    <div style="position:relative; z-index:2; max-width:1140px; margin:0 auto; display:flex; flex-direction:column; align-items:center; text-align:center;">
+      <div style="display:inline-flex; align-items:center; gap:10px; padding:8px 17px; background:#FFFFFF; border:1px solid #BBF7D0; border-radius:999px; font-size:13px; font-weight:700; color:#047857; letter-spacing:.02em; box-shadow:0 2px 6px rgba(4,120,87,.08); margin-bottom:30px;">
+        <span style="width:8px; height:8px; border-radius:50%; background:#10B981; box-shadow:0 0 0 4px rgba(16,185,129,.18);"></span>
+        Дезинфекция · Дезинсекция · Дератизация
+      </div>
+      <h1 class="nua-h1" style="margin:0; max-width:920px; font-size:60px; line-height:1.06; font-weight:800; letter-spacing:-.025em; color:#0B1220;">
+        Профессиональная дезинфекция, дезинсекция и дератизация в <span style="color:#059669;">Атырау</span>
+      </h1>
+      <p class="nua-hero-sub" style="margin:26px 0 0; max-width:690px; font-size:19px; line-height:1.6; font-weight:500; color:#516076;">
+        Комплексная защита вашего дома и бизнеса от вредителей, грызунов и патогенных микроорганизмов. Безопасно, быстро, с гарантией по договору.
+      </p>
+      <div class="nua-cta-row" style="display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:38px;">
+        <a href="#contacts" class="nua-btn-primary" style="display:inline-flex; align-items:center; gap:10px; padding:16px 30px; background:#047857; color:#fff; border-radius:13px; font-size:16px; font-weight:700; text-decoration:none; box-shadow:0 12px 26px -10px rgba(4,120,87,.6);">
+          Оставить заявку
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://wa.me/77713730888" class="nua-btn-wa" style="display:inline-flex; align-items:center; gap:10px; padding:16px 28px; background:#fff; color:#0F172A; border:1.5px solid #E2E8F0; border-radius:13px; font-size:16px; font-weight:700; text-decoration:none;">
+          <img src="assets/whatsapp_icon-icons.com_62756.svg" alt="" width="20" height="20" style="display:block;">
+          Написать в WhatsApp
+        </a>
+      </div>
+      <div style="margin-top:20px; display:flex; flex-wrap:wrap; gap:8px 24px; justify-content:center; font-size:14px; font-weight:600; color:#64748B;">
+        <span style="display:inline-flex; align-items:center; gap:7px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Выезд в день обращения</span>
+        <span style="display:inline-flex; align-items:center; gap:7px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Официальный договор</span>
+        <span style="display:inline-flex; align-items:center; gap:7px;"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Гарантия на все работы</span>
+      </div>
+      <div class="nua-hero-stats" style="margin-top:60px; width:100%; display:grid; grid-template-columns:repeat(3,1fr); gap:20px;">
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:20px; padding:28px; text-align:left; display:flex; flex-direction:column; gap:16px; box-shadow:0 1px 3px rgba(15,23,42,.05);">
+          <div style="width:46px; height:46px; border-radius:13px; background:#ECFDF5; display:flex; align-items:center; justify-content:center; color:#047857;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <div><div style="font-size:44px; font-weight:800; letter-spacing:-.03em; color:#0B1220; line-height:1;">10+</div><div style="margin-top:9px; font-size:15px; font-weight:600; color:#64748B;">лет опыта</div></div>
+        </div>
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:20px; padding:28px; text-align:left; display:flex; flex-direction:column; gap:16px; box-shadow:0 1px 3px rgba(15,23,42,.05);">
+          <div style="width:46px; height:46px; border-radius:13px; background:#ECFDF5; display:flex; align-items:center; justify-content:center; color:#047857;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg></div>
+          <div><div style="font-size:44px; font-weight:800; letter-spacing:-.03em; color:#0B1220; line-height:1;">500+</div><div style="margin-top:9px; font-size:15px; font-weight:600; color:#64748B;">объектов обработано</div></div>
+        </div>
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:20px; padding:28px; text-align:left; display:flex; flex-direction:column; gap:16px; box-shadow:0 1px 3px rgba(15,23,42,.05);">
+          <div style="width:46px; height:46px; border-radius:13px; background:#ECFDF5; display:flex; align-items:center; justify-content:center; color:#047857;"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <div><div style="font-size:44px; font-weight:800; letter-spacing:-.03em; color:#0B1220; line-height:1;">100%</div><div style="margin-top:9px; font-size:15px; font-weight:600; color:#64748B;">гарантия результата</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" data-screen-label="О компании" class="nua-sec" style="padding:100px 28px; background:#F8FAFC; border-top:1px solid #EEF2F6;">
+    <div style="max-width:1180px; margin:0 auto;">
+
+      <!-- Top row: intro + photo -->
+      <div class="nua-about-top nua-rev" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:center; margin-bottom:64px;">
+        <div>
+          <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669; margin-bottom:22px;">
+            <span style="width:18px; height:2px; background:#059669;"></span>О компании
+          </div>
+          <h2 class="nua-h2" style="margin:0; font-size:44px; line-height:1.1; font-weight:800; letter-spacing:-.03em; color:#0B1220;">
+            Почему нам доверяют свою <span style="color:#059669;">безопасность?</span>
+          </h2>
+          <p style="margin:24px 0 0; max-width:500px; font-size:18px; line-height:1.65; font-weight:500; color:#516076;">
+            Мы специализируемся на профессиональном уничтожении вредителей и обслуживании инженерных сетей, строго соблюдая санитарные нормы Республики&nbsp;Казахстан.
+          </p>
+          <div style="margin-top:30px; display:inline-flex; align-items:center; gap:13px; padding:14px 20px; background:#fff; border:1px solid #E8EDF2; border-radius:14px; box-shadow:0 1px 3px rgba(15,23,42,.05);">
+            <div style="flex-shrink:0; width:42px; height:42px; border-radius:11px; background:#ECFDF5; display:flex; align-items:center; justify-content:center; color:#047857;">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6l4-2 5 2 5-2 4 2v13l-4 2-5-2-5 2-4-2z"/><path d="M9 4v15M15 5v15"/></svg>
+            </div>
+            <div>
+              <div style="font-size:14px; font-weight:700; color:#0B1220;">Работаем по СанПиН РК</div>
+              <div style="font-size:13px; font-weight:600; color:#64748B; margin-top:1px;">Официальный договор и протоколы</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Photo slot -->
+        <div style="position:relative; border-radius:24px; overflow:hidden; box-shadow:0 24px 50px -24px rgba(11,18,32,.35); aspect-ratio:4/3;">
+          <img src="assets/Photo%20about%20company/photo%20main.jpg" alt="Специалисты НУР-АРУ проводят обработку" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+          <div style="position:absolute; left:18px; bottom:18px; z-index:2; display:inline-flex; align-items:center; gap:8px; padding:9px 15px; background:rgba(11,18,32,.78); backdrop-filter:blur(6px); border-radius:999px; font-size:13px; font-weight:700; color:#fff; pointer-events:none;">
+            <span style="width:7px; height:7px; border-radius:50%; background:#34D399;"></span>
+            Наша команда в работе
+          </div>
+        </div>
+      </div>
+
+      <!-- Bento facts row -->
+      <div class="nua-grid-2 nua-rev" style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:22px; padding:30px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; flex-direction:column;">
+          <div style="width:46px; height:46px; border-radius:13px; background:#ECFDF5; display:flex; align-items:center; justify-content:center; color:#047857; margin-bottom:auto;">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <div style="margin-top:28px;">
+            <div style="font-size:46px; font-weight:800; letter-spacing:-.035em; color:#0B1220; line-height:1;">10+</div>
+            <div style="margin-top:10px; font-size:15.5px; font-weight:600; line-height:1.45; color:#516076;">лет успешной работы на рынке</div>
+          </div>
+        </div>
+
+        <div style="background:linear-gradient(150deg,#059669 0%,#065F46 100%); border-radius:22px; padding:30px; box-shadow:0 18px 38px -18px rgba(6,95,70,.55); display:flex; flex-direction:column; position:relative; overflow:hidden;">
+          <div style="position:absolute; right:-26px; top:-26px; width:130px; height:130px; border-radius:50%; background:rgba(255,255,255,.08);"></div>
+          <div style="width:46px; height:46px; border-radius:13px; background:rgba(255,255,255,.16); display:flex; align-items:center; justify-content:center; color:#fff; margin-bottom:auto; position:relative;">
+            <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><path d="M22 4L12 14.01l-3-3"/></svg>
+          </div>
+          <div style="margin-top:28px; position:relative;">
+            <div style="font-size:46px; font-weight:800; letter-spacing:-.035em; color:#fff; line-height:1;">100%</div>
+            <div style="margin-top:10px; font-size:15.5px; font-weight:600; line-height:1.45; color:rgba(255,255,255,.88);">успешной работы с гарантированным результатом</div>
+          </div>
+        </div>
+
+        <div class="nua-card" style="grid-column:span 1; background:#fff; border:1px solid #E8EDF2; border-radius:22px; padding:30px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; gap:24px;">
+          <div style="flex-shrink:0; display:flex; flex-direction:column; align-items:flex-start;">
+            <div style="width:46px; height:46px; border-radius:13px; background:#ECFDF5; display:flex; align-items:center; justify-content:center; color:#047857; margin-bottom:18px;">
+              <svg width="23" height="23" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S6.5 8.6 6.5 13.5a5.5 5.5 0 0011 0C17.5 8.6 12 2.7 12 2.7z"/><path d="M9.5 13.8l1.6 1.6 3.2-3.2"/></svg>
+            </div>
+            <div style="font-size:46px; font-weight:800; letter-spacing:-.035em; color:#0B1220; line-height:1; white-space:nowrap;">100%</div>
+          </div>
+          <div>
+            <div style="font-size:18px; font-weight:800; color:#0B1220; letter-spacing:-.01em;">Безопасность для людей и экологии</div>
+            <div style="margin-top:7px; font-size:15px; font-weight:500; line-height:1.55; color:#516076;">Только сертифицированные препараты, разрешённые на территории РК.</div>
+          </div>
+        </div>
+
+        <div class="nua-card-dark" style="grid-column:span 1; background:#0B1220; border:1px solid #1E2A40; border-radius:22px; padding:30px; display:flex; align-items:center; gap:22px;">
+          <div style="flex-shrink:0; width:54px; height:54px; border-radius:15px; background:rgba(52,211,153,.14); display:flex; align-items:center; justify-content:center; color:#34D399;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 14a4 4 0 100-8 4 4 0 000 8z"/><path d="M5.5 20a6.5 6.5 0 0113 0"/></svg>
+          </div>
+          <div style="flex:1;">
+            <div style="font-size:18px; font-weight:800; color:#fff; letter-spacing:-.01em;">Аттестованный персонал</div>
+            <div style="margin-top:7px; font-size:15px; font-weight:500; line-height:1.55; color:#C4CCDA;">Профильное образование и ежегодная проверка знаний.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============ SERVICES (Bento, 5 directions) ============ -->
+  <section id="services" data-screen-label="Услуги" class="nua-sec" style="padding:96px 28px; background:#FFFFFF;">
+    <div style="max-width:1180px; margin:0 auto;">
+      <div class="nua-rev" style="text-align:center; max-width:780px; margin:0 auto 48px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669; margin-bottom:18px;"><span style="width:18px; height:2px; background:#059669;"></span>Ключевые направления<span style="width:18px; height:2px; background:#059669;"></span></div>
+        <h2 class="nua-h2" style="margin:0; font-size:42px; line-height:1.12; font-weight:800; letter-spacing:-.03em; color:#0B1220;">Полный цикл мероприятий по снижению численности вредителей и обеззараживанию</h2>
+      </div>
+
+      <!-- Row 1: three core services, each with photo -->
+      <div class="nua-grid-3 nua-rev" style="display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin-bottom:18px;">
+
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:22px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; flex-direction:column;">
+          <div style="position:relative; height:180px;">
+            <img src="assets/napravlenyia/Дезинфекция.png" alt="Дезинфекция помещения" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:14px; top:14px; z-index:2; display:flex; align-items:center; gap:9px; pointer-events:none;">
+              <div style="width:38px; height:38px; border-radius:11px; background:linear-gradient(140deg,#10B981,#047857); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px -8px rgba(4,120,87,.7);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S6.5 8.6 6.5 13.5a5.5 5.5 0 0011 0C17.5 8.6 12 2.7 12 2.7z"/><path d="M9.5 13.8l1.6 1.6 3.2-3.2"/></svg></div>
+              <span style="padding:4px 9px; background:rgba(11,18,32,.72); border-radius:7px; font-size:12px; font-weight:800; color:#fff; font-family:'JetBrains Mono', monospace;">01</span>
+            </div>
+          </div>
+          <div style="padding:26px 28px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 10px; font-size:21px; font-weight:800; color:#0B1220; letter-spacing:-.01em;">Дезинфекция</h3>
+            <p style="margin:0; font-size:15px; line-height:1.6; color:#516076; font-weight:500;">Полное уничтожение вирусов, бактерий, плесневых грибков и аллергенов, разрушение токсинов во внешней среде.</p>
+          </div>
+        </div>
+
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:22px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; flex-direction:column;">
+          <div style="position:relative; height:180px;">
+            <img src="assets/napravlenyia/Дезинсекция.png" alt="Дезинсекция — обработка от насекомых" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:14px; top:14px; z-index:2; display:flex; align-items:center; gap:9px; pointer-events:none;">
+              <div style="width:38px; height:38px; border-radius:11px; background:linear-gradient(140deg,#10B981,#047857); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px -8px rgba(4,120,87,.7);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8a4 4 0 014 4v2a4 4 0 01-8 0v-2a4 4 0 014-4z"/><path d="M12 8V5M9.5 5.5L8 4M14.5 5.5L16 4M8 12H4.5M16 12h3.5"/></svg></div>
+              <span style="padding:4px 9px; background:rgba(11,18,32,.72); border-radius:7px; font-size:12px; font-weight:800; color:#fff; font-family:'JetBrains Mono', monospace;">02</span>
+            </div>
+          </div>
+          <div style="padding:26px 28px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 10px; font-size:21px; font-weight:800; color:#0B1220; letter-spacing:-.01em;">Дезинсекция</h3>
+            <p style="margin:0; font-size:15px; line-height:1.6; color:#516076; font-weight:500;">Бытовые вредители (тараканы, клопы, муравьи, блохи) и уличные насекомые: клещи, саранча, комары, мухи и осы.</p>
+          </div>
+        </div>
+
+        <div class="nua-card" style="background:#fff; border:1px solid #E8EDF2; border-radius:22px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; flex-direction:column;">
+          <div style="position:relative; height:180px;">
+            <img src="assets/napravlenyia/Дератизация.png" alt="Дератизация — борьба с грызунами" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:14px; top:14px; z-index:2; display:flex; align-items:center; gap:9px; pointer-events:none;">
+              <div style="width:38px; height:38px; border-radius:11px; background:linear-gradient(140deg,#10B981,#047857); display:flex; align-items:center; justify-content:center; box-shadow:0 8px 18px -8px rgba(4,120,87,.7);"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="14" r="5"/><circle cx="6" cy="9.5" r="2.1"/><path d="M14 13.5c3.2.2 5-1 6.6-3.3"/></svg></div>
+              <span style="padding:4px 9px; background:rgba(11,18,32,.72); border-radius:7px; font-size:12px; font-weight:800; color:#fff; font-family:'JetBrains Mono', monospace;">03</span>
+            </div>
+          </div>
+          <div style="padding:26px 28px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 10px; font-size:21px; font-weight:800; color:#0B1220; letter-spacing:-.01em;">Дератизация</h3>
+            <p style="margin:0; font-size:15px; line-height:1.6; color:#516076; font-weight:500;">Профессиональное истребление грызунов (крыс, мышей, полёвок) на объектах любой площади.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2: methods strip -->
+      <div class="nua-rev nua-methods-strip" style="background:linear-gradient(135deg,#059669 0%,#065F46 100%); border-radius:22px; padding:32px 36px; color:#fff; position:relative; overflow:hidden; margin-bottom:18px;">
+        <div style="position:absolute; right:-30px; top:-30px; width:160px; height:160px; border-radius:50%; background:rgba(255,255,255,.07);"></div>
+        <div class="nua-methods-row" style="position:relative; display:flex; align-items:center; gap:36px; flex-wrap:wrap;">
+          <div style="flex-shrink:0;">
+            <div style="font-size:12px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:rgba(255,255,255,.7); margin-bottom:6px;">Используемые методы</div>
+            <div style="font-size:22px; font-weight:800; letter-spacing:-.01em;">Чем мы работаем</div>
+          </div>
+          <div class="nua-methods-grid" style="flex:1; min-width:280px; display:grid; grid-template-columns:1fr 1fr; gap:11px 24px;">
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:14.5px; line-height:1.45; color:rgba(255,255,255,.92); font-weight:600;"><svg style="flex-shrink:0; margin-top:2px;" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Очаговая и профилактическая дезинфекция</div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:14.5px; line-height:1.45; color:rgba(255,255,255,.92); font-weight:600;"><svg style="flex-shrink:0; margin-top:2px;" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Раскладка сертифицированных приманок</div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:14.5px; line-height:1.45; color:rgba(255,255,255,.92); font-weight:600;"><svg style="flex-shrink:0; margin-top:2px;" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Тампонирование нор и ловушки</div>
+            <div style="display:flex; gap:10px; align-items:flex-start; font-size:14.5px; line-height:1.45; color:rgba(255,255,255,.92); font-weight:600;"><svg style="flex-shrink:0; margin-top:2px;" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg>Барьерная защита по периметру</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: two B2B services, each with photo -->
+      <div class="nua-grid-2b nua-rev" style="display:grid; grid-template-columns:1fr 1fr; gap:18px;">
+
+        <div class="nua-card-dark" style="background:#0B1220; border:1px solid #1E2A40; border-radius:22px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="position:relative; height:190px;">
+            <img src="assets/napravlenyia/Системы%20водоснабжения%20и%20канализации.jpg" alt="Промывка и дезинфекция систем водоснабжения" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:16px; top:16px; z-index:2; display:flex; align-items:center; gap:10px; pointer-events:none;">
+              <div style="width:42px; height:42px; border-radius:12px; background:rgba(11,18,32,.78); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; color:#34D399;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7S6.5 8.6 6.5 13.5a5.5 5.5 0 0011 0C17.5 8.6 12 2.7 12 2.7z"/></svg></div>
+              <span style="padding:5px 11px; background:rgba(52,211,153,.92); border-radius:999px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#04241B;">B2B · 04</span>
+            </div>
+          </div>
+          <div style="padding:28px 30px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 11px; font-size:21px; font-weight:800; color:#fff; letter-spacing:-.01em;">Системы водоснабжения и канализации</h3>
+            <p style="margin:0 0 16px; font-size:15px; line-height:1.6; color:#C4CCDA; font-weight:500;">Гидропневматическая промывка и дезинфекция труб, РЧВ и водонапорных башен. Специализированная химия, безопасная для питьевой воды.</p>
+            <div style="margin-top:auto; display:flex; align-items:flex-start; gap:10px; padding-top:16px; border-top:1px solid #1E2A40;">
+              <svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+              <span style="font-size:14px; line-height:1.5; color:#C4CCDA;">Отбор проб и анализы в аккредитованной лаборатории с протоколами.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="nua-card-dark" style="background:#0B1220; border:1px solid #1E2A40; border-radius:22px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="position:relative; height:190px;">
+            <img src="assets/napravlenyia/Системы%20вентиляции%20и%20кондиционирования.jpg" alt="Очистка и дезинфекция систем вентиляции" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:16px; top:16px; z-index:2; display:flex; align-items:center; gap:10px; pointer-events:none;">
+              <div style="width:42px; height:42px; border-radius:12px; background:rgba(11,18,32,.78); backdrop-filter:blur(4px); display:flex; align-items:center; justify-content:center; color:#34D399;"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h11a3 3 0 100-6M3 16h15a3 3 0 110 6M3 12h18"/></svg></div>
+              <span style="padding:5px 11px; background:rgba(52,211,153,.92); border-radius:999px; font-size:11px; font-weight:700; letter-spacing:.06em; text-transform:uppercase; color:#04241B;">B2B · 05</span>
+            </div>
+          </div>
+          <div style="padding:28px 30px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 11px; font-size:21px; font-weight:800; color:#fff; letter-spacing:-.01em;">Системы вентиляции и кондиционирования</h3>
+            <p style="margin:0 0 16px; font-size:15px; line-height:1.6; color:#C4CCDA; font-weight:500;">Очистка и дезинфекция воздуховодов, фильтров и оборудования с применением сертифицированных средств.</p>
+            <div style="margin-top:auto; display:flex; align-items:flex-start; gap:10px; padding-top:16px; border-top:1px solid #1E2A40;">
+              <svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>
+              <span style="font-size:14px; line-height:1.5; color:#C4CCDA;">Взятие смывов и выдача протокола эффективности.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TECHNOLOGY (dark, vertical cards) ============ -->
+  <section id="tech" data-screen-label="Технологии" class="nua-sec" style="padding:96px 28px; background:#0B1220;">
+    <div style="max-width:1180px; margin:0 auto;">
+      <div class="nua-rev" style="max-width:720px; margin-bottom:56px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#34D399; margin-bottom:16px;"><span style="width:18px; height:2px; background:#34D399;"></span>Технологии и методы обработки</div>
+        <h2 class="nua-h2" style="margin:0; font-size:42px; line-height:1.12; font-weight:800; letter-spacing:-.03em; color:#FFFFFF;">Профессиональное оборудование для задач любой сложности</h2>
+      </div>
+
+      <div class="nua-grid-3t nua-rev" style="display:grid; grid-template-columns:repeat(3,1fr); gap:22px; align-items:stretch;">
+
+        <!-- Холодный туман -->
+        <div class="nua-card-dark" style="background:#0F1A2E; border:1px solid #1E2A40; border-radius:26px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="position:relative; height:200px;">
+            <img src="assets/Metody%20obrabotki/generator-kholodnogo-tumana.jpg" alt="Генератор холодного тумана в работе" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:16px; top:16px; z-index:2; display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:rgba(52,211,153,.92); border-radius:999px; font-size:12px; font-weight:700; color:#04241B; pointer-events:none;">❄ Для помещений</div>
+          </div>
+          <div style="padding:30px 30px 32px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 6px; font-size:22px; font-weight:800; color:#fff; letter-spacing:-.015em;">Генераторы холодного тумана</h3>
+            <p style="margin:0 0 18px; font-size:13px; font-weight:600; color:#7E8AA0; font-family:'JetBrains Mono', monospace;">// <span style="color:#34D399;">30–80 µm</span> · висит <span style="color:#34D399;">3–4 ч</span></p>
+            <p style="margin:0 0 18px; font-size:15px; line-height:1.6; color:#C4CCDA; font-weight:500;">Распыление жидкости без нагрева. Облако проникает в щели и вентиляцию, не оставляя пятен и подтёков.</p>
+            <div style="display:flex; flex-direction:column; gap:11px; margin-bottom:auto;">
+              <div style="display:flex; gap:10px; align-items:flex-start;"><svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span style="font-size:14px; line-height:1.45; color:#C4CCDA;">Безопасно для интерьера</span></div>
+              <div style="display:flex; gap:10px; align-items:flex-start;"><svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span style="font-size:14px; line-height:1.45; color:#C4CCDA;">Проникает в щели и вентиляцию</span></div>
+            </div>
+            <div style="margin-top:24px; padding-top:18px; border-top:1px solid #1E2A40;">
+              <span style="font-size:12.5px; font-weight:700; color:#7E8AA0;">Применение: </span><span style="font-size:12.5px; color:#C4CCDA;">жильё, склады, пищевая промышленность.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Горячий туман (featured) -->
+        <div class="nua-card-dark" style="background:linear-gradient(160deg,#13243C 0%,#0F1A2E 100%); border:1px solid #2A3A55; border-radius:26px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 24px 50px -28px rgba(0,0,0,.7);">
+          <div style="position:relative; height:200px;">
+            <img src="assets/Metody%20obrabotki/generator-goryachego-tumana.jpg" alt="Генератор горячего тумана в работе" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:16px; top:16px; z-index:2; display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:rgba(239,68,68,.92); border-radius:999px; font-size:12px; font-weight:700; color:#fff; pointer-events:none;">🔥 Для сложных объектов</div>
+          </div>
+          <div style="padding:30px 30px 32px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 6px; font-size:22px; font-weight:800; color:#fff; letter-spacing:-.015em;">Генераторы горячего тумана</h3>
+            <p style="margin:0 0 18px; font-size:13px; font-weight:600; color:#7E8AA0; font-family:'JetBrains Mono', monospace;">// густой пар · покрытие <span style="color:#34D399;">100%</span></p>
+            <p style="margin:0 0 18px; font-size:15px; line-height:1.6; color:#C4CCDA; font-weight:500;">Раствор нагревается и выбрасывается густым горячим паром под давлением.</p>
+            <div style="display:flex; flex-direction:column; gap:11px; margin-bottom:auto;">
+              <div style="display:flex; gap:10px; align-items:flex-start;"><svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span style="font-size:14px; line-height:1.45; color:#C4CCDA;"><span style="font-weight:700; color:#fff;">100% покрытие</span> без «мёртвых зон»</span></div>
+              <div style="display:flex; gap:10px; align-items:flex-start;"><svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span style="font-size:14px; line-height:1.45; color:#C4CCDA;">Эффективен против плесени</span></div>
+            </div>
+            <div style="margin-top:24px; padding-top:18px; border-top:1px solid #2A3A55;">
+              <span style="font-size:12.5px; font-weight:700; color:#7E8AA0;">Применение: </span><span style="font-size:12.5px; color:#C4CCDA;">подвалы, канализация, очаги плесени.</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Бензиновые опрыскиватели -->
+        <div class="nua-card-dark" style="background:#0F1A2E; border:1px solid #1E2A40; border-radius:26px; overflow:hidden; display:flex; flex-direction:column;">
+          <div style="position:relative; height:200px;">
+            <img src="assets/Metody%20obrabotki/benzinovyy-opryskivatel.jpg" alt="Бензиновый опрыскиватель для обработки территорий" loading="lazy" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; display:block;">
+            <div style="position:absolute; left:16px; top:16px; z-index:2; display:inline-flex; align-items:center; gap:7px; padding:7px 13px; background:rgba(52,211,153,.92); border-radius:999px; font-size:12px; font-weight:700; color:#04241B; pointer-events:none;">🌳 Для территорий</div>
+          </div>
+          <div style="padding:30px 30px 32px; display:flex; flex-direction:column; flex:1;">
+            <h3 style="margin:0 0 6px; font-size:22px; font-weight:800; color:#fff; letter-spacing:-.015em;">Бензиновые опрыскиватели</h3>
+            <p style="margin:0 0 18px; font-size:13px; font-weight:600; color:#7E8AA0; font-family:'JetBrains Mono', monospace;">// дальность <span style="color:#34D399;">до 12 м</span></p>
+            <p style="margin:0 0 18px; font-size:15px; line-height:1.6; color:#C4CCDA; font-weight:500;">Механическое распыление под высоким давлением с выбросом препарата до 12 метров.</p>
+            <div style="display:flex; flex-direction:column; gap:11px; margin-bottom:auto;">
+              <div style="display:flex; gap:10px; align-items:flex-start;"><svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span style="font-size:14px; line-height:1.45; color:#C4CCDA;">Пробивает густую листву</span></div>
+              <div style="display:flex; gap:10px; align-items:flex-start;"><svg style="flex-shrink:0; margin-top:2px;" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#34D399" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12l5 5L20 7"/></svg><span style="font-size:14px; line-height:1.45; color:#C4CCDA;">Травля клещей, саранчи и тли</span></div>
+            </div>
+            <div style="margin-top:24px; padding-top:18px; border-top:1px solid #1E2A40;">
+              <span style="font-size:12.5px; font-weight:700; color:#7E8AA0;">Применение: </span><span style="font-size:12.5px; color:#C4CCDA;">парки, сады, внешние периметры.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STEPS ============ -->
+  <section id="steps" class="nua-sec" style="padding:96px 28px; background:#FFFFFF;">
+    <div style="max-width:1180px; margin:0 auto;">
+      <div class="nua-rev" style="text-align:center; margin-bottom:60px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669; margin-bottom:16px;"><span style="width:18px; height:2px; background:#059669;"></span>Процесс<span style="width:18px; height:2px; background:#059669;"></span></div>
+        <h2 class="nua-h2" style="margin:0; font-size:42px; font-weight:800; letter-spacing:-.025em; color:#0B1220;">4 шага к чистоте и безопасности</h2>
+      </div>
+
+      <div class="nua-steps nua-rev" style="position:relative; display:grid; grid-template-columns:repeat(4,1fr); gap:24px;">
+        <div class="nua-steps-line" style="position:absolute; top:30px; left:12%; right:12%; height:2px; background:repeating-linear-gradient(90deg,#CBD5E1 0,#CBD5E1 7px,transparent 7px,transparent 15px);"></div>
+
+        <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div style="width:60px; height:60px; border-radius:50%; background:#047857; color:#fff; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:800; box-shadow:0 12px 24px -10px rgba(4,120,87,.6); border:5px solid #fff;">1</div>
+          <h3 style="margin:22px 0 8px; font-size:19px; font-weight:800; color:#0B1220;">Заявка</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#516076; max-width:230px;">Вы оставляете заявку по телефону или в WhatsApp.</p>
+        </div>
+        <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div style="width:60px; height:60px; border-radius:50%; background:#047857; color:#fff; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:800; box-shadow:0 12px 24px -10px rgba(4,120,87,.6); border:5px solid #fff;">2</div>
+          <h3 style="margin:22px 0 8px; font-size:19px; font-weight:800; color:#0B1220;">Оценка</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#516076; max-width:230px;">Специалист выезжает на объект в удобное время и составляет план действий.</p>
+        </div>
+        <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div style="width:60px; height:60px; border-radius:50%; background:#047857; color:#fff; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:800; box-shadow:0 12px 24px -10px rgba(4,120,87,.6); border:5px solid #fff;">3</div>
+          <h3 style="margin:22px 0 8px; font-size:19px; font-weight:800; color:#0B1220;">Обработка</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#516076; max-width:230px;">Проводим профессиональную зачистку сертифицированными препаратами.</p>
+        </div>
+        <div style="position:relative; display:flex; flex-direction:column; align-items:center; text-align:center;">
+          <div style="width:60px; height:60px; border-radius:50%; background:#047857; color:#fff; display:flex; align-items:center; justify-content:center; font-size:22px; font-weight:800; box-shadow:0 12px 24px -10px rgba(4,120,87,.6); border:5px solid #fff;">4</div>
+          <h3 style="margin:22px 0 8px; font-size:19px; font-weight:800; color:#0B1220;">Результат</h3>
+          <p style="margin:0; font-size:15px; line-height:1.55; color:#516076; max-width:230px;">Чистый объект, гарантия и инструкции по дальнейшему уходу.</p>
+        </div>
+      </div>
+
+      <!-- Work process gallery -->
+      <div class="nua-rev" style="margin-top:72px;">
+        <div style="text-align:center; margin-bottom:26px;">
+          <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669;"><span style="width:18px; height:2px; background:#059669;"></span>Наши специалисты в работе<span style="width:18px; height:2px; background:#059669;"></span></div>
+        </div>
+        <div class="nua-marq">
+          <div class="nua-track" style="animation: nuaScrollL 62s linear infinite;">
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649428.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649429.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649430.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649431.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649432.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649433.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649434.png" alt="Обработка объекта специалистом НУР-АРУ" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <!-- duplicate set for seamless loop -->
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649428.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649429.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649430.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649431.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649432.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649433.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+            <div aria-hidden="true" style="flex-shrink:0; width:320px; height:214px; border-radius:18px; overflow:hidden; box-shadow:0 10px 24px -14px rgba(11,18,32,.3);"><img src="assets/work%20process/Rectangle%20240649434.png" alt="" loading="lazy" style="width:100%; height:100%; object-fit:cover; display:block;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ LICENSES ============ -->
+  <section id="license" data-screen-label="Лицензии" class="nua-sec" style="padding:96px 28px; background:#F8FAFC; border-top:1px solid #EEF2F6;">
+    <div style="max-width:1180px; margin:0 auto;">
+      <div class="nua-rev" style="text-align:center; max-width:760px; margin:0 auto 48px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669; margin-bottom:18px;"><span style="width:18px; height:2px; background:#059669;"></span>Лицензии и сертификаты<span style="width:18px; height:2px; background:#059669;"></span></div>
+        <h2 class="nua-h2" style="margin:0; font-size:42px; line-height:1.12; font-weight:800; letter-spacing:-.03em; color:#0B1220;">Работаем официально — все документы в наличии</h2>
+        <p style="margin:18px 0 0; font-size:18px; line-height:1.6; font-weight:500; color:#516076;">Государственная лицензия и сертификаты соответствия. Деятельность ведётся по санитарным нормам Республики&nbsp;Казахстан.</p>
+      </div>
+      <div class="nua-grid-lic nua-rev" style="display:grid; grid-template-columns:repeat(6,1fr); gap:14px;">
+        <a class="nua-card" href="assets/Certificate/image%202098.png" target="_blank" rel="noopener" style="display:block; background:#fff; border:1px solid #E8EDF2; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05);"><img src="assets/Certificate/image%202098.png" alt="Лицензия НУР-АРУ — документ 1" loading="lazy" style="display:block; width:100%; aspect-ratio:5/7; object-fit:cover; object-position:top;"></a>
+        <a class="nua-card" href="assets/Certificate/image%202099.png" target="_blank" rel="noopener" style="display:block; background:#fff; border:1px solid #E8EDF2; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05);"><img src="assets/Certificate/image%202099.png" alt="Лицензия НУР-АРУ — документ 2" loading="lazy" style="display:block; width:100%; aspect-ratio:5/7; object-fit:cover; object-position:top;"></a>
+        <a class="nua-card" href="assets/Certificate/image%202100.png" target="_blank" rel="noopener" style="display:block; background:#fff; border:1px solid #E8EDF2; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05);"><img src="assets/Certificate/image%202100.png" alt="Сертификат НУР-АРУ — документ 3" loading="lazy" style="display:block; width:100%; aspect-ratio:5/7; object-fit:cover; object-position:top;"></a>
+        <a class="nua-card" href="assets/Certificate/image%202101.png" target="_blank" rel="noopener" style="display:block; background:#fff; border:1px solid #E8EDF2; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05);"><img src="assets/Certificate/image%202101.png" alt="Сертификат НУР-АРУ — документ 4" loading="lazy" style="display:block; width:100%; aspect-ratio:5/7; object-fit:cover; object-position:top;"></a>
+        <a class="nua-card" href="assets/Certificate/image%202102.png" target="_blank" rel="noopener" style="display:block; background:#fff; border:1px solid #E8EDF2; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05);"><img src="assets/Certificate/image%202102.png" alt="Сертификат НУР-АРУ — документ 5" loading="lazy" style="display:block; width:100%; aspect-ratio:5/7; object-fit:cover; object-position:top;"></a>
+        <a class="nua-card" href="assets/Certificate/image%202103.png" target="_blank" rel="noopener" style="display:block; background:#fff; border:1px solid #E8EDF2; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(15,23,42,.05);"><img src="assets/Certificate/image%202103.png" alt="Сертификат НУР-АРУ — документ 6" loading="lazy" style="display:block; width:100%; aspect-ratio:5/7; object-fit:cover; object-position:top;"></a>
+      </div>
+      <p class="nua-rev" style="margin:22px 0 0; text-align:center; font-size:14px; font-weight:600; color:#94A3B8;">Нажмите на документ, чтобы открыть его в полном размере.</p>
+    </div>
+  </section>
+
+  <!-- ============ CLIENTS (animated marquee) ============ -->
+  <section id="clients" data-screen-label="Клиенты" class="nua-sec-y" style="padding:96px 0 100px; background:#FFFFFF; overflow:hidden;">
+    <div class="nua-rev" style="max-width:760px; margin:0 auto 52px; padding:0 28px; text-align:center;">
+      <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669; margin-bottom:18px;"><span style="width:18px; height:2px; background:#059669;"></span>Наши клиенты<span style="width:18px; height:2px; background:#059669;"></span></div>
+      <h2 class="nua-h2" style="margin:0; font-size:42px; line-height:1.12; font-weight:800; letter-spacing:-.03em; color:#0B1220;">Нам доверяют ведущие компании региона</h2>
+      <p style="margin:18px 0 0; font-size:18px; line-height:1.6; font-weight:500; color:#516076;">Промышленные предприятия, торговые сети, гостиницы и нефтегазовый сектор Атырау и Мангистау.</p>
+    </div>
+
+    <!-- Row 1 → scroll left -->
+    <div class="nua-marq" style="margin-bottom:22px;">
+      <div class="nua-track" style="animation: nuaScrollL 50s linear infinite;">
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203058.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203059.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203060.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203061.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203062.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203063.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203064.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203065.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <!-- duplicate set for seamless loop -->
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203058.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203059.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203060.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203061.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203062.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203063.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203064.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203065.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+      </div>
+    </div>
+
+    <!-- Row 2 → scroll right -->
+    <div class="nua-marq">
+      <div class="nua-track" style="animation: nuaScrollR 55s linear infinite;">
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203066.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203067.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203068.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203069.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203070.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203071.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203072.png" alt="Логотип клиента" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/Z%20Munai.png" alt="Логотип клиента Z Munai" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <!-- duplicate set for seamless loop -->
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203066.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203067.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203068.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203069.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203070.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203071.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/image%203072.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+        <div aria-hidden="true" style="flex-shrink:0; width:210px; height:118px; background:#fff; border:1px solid #E8EDF2; border-radius:16px; box-shadow:0 1px 3px rgba(15,23,42,.05); display:flex; align-items:center; justify-content:center; padding:18px;"><img src="assets/clients%20logo/Z%20Munai.png" alt="" loading="lazy" style="max-width:100%; max-height:100%; object-fit:contain; display:block;"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section id="faq" class="nua-sec" style="padding:96px 28px; background:#F8FAFC;">
+    <div style="max-width:820px; margin:0 auto;">
+      <div class="nua-rev" style="text-align:center; margin-bottom:48px;">
+        <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#059669; margin-bottom:16px;"><span style="width:18px; height:2px; background:#059669;"></span>FAQ<span style="width:18px; height:2px; background:#059669;"></span></div>
+        <h2 class="nua-h2" style="margin:0; font-size:42px; font-weight:800; letter-spacing:-.025em; color:#0B1220;">Ответы на ваши вопросы</h2>
+      </div>
+
+      <div class="nua-rev" style="display:flex; flex-direction:column; gap:14px;">
+
+        <div style="background:#fff; border:1px solid #E8EDF2; border-radius:18px; overflow:hidden; box-shadow:0 1px 2px rgba(15,23,42,.04);">
+          <button onClick="{{ toggle0 }}" class="nua-faq-btn" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 26px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:inherit;">
+            <span style="font-size:18px; font-weight:700; color:#0B1220; letter-spacing:-.01em;">Как часто нужно проводить дезинсекцию?</span>
+            <span style="{{ icon0 }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div style="{{ ans0 }}"><p style="margin:0; padding:0 26px 24px; font-size:16px; line-height:1.65; color:#516076; font-weight:500;">Частота дезинсекции зависит от типа объекта: жилые помещения обрабатывают по мере появления вредителей, профилактически — 1–2 раза в год. В общепите, гостиницах и местах общего пользования МКД плановая обработка проводится не реже 1 раза в квартал, а при наличии насекомых — ежемесячно.</p></div>
+        </div>
+
+        <div style="background:#fff; border:1px solid #E8EDF2; border-radius:18px; overflow:hidden; box-shadow:0 1px 2px rgba(15,23,42,.04);">
+          <button onClick="{{ toggle1 }}" class="nua-faq-btn" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 26px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:inherit;">
+            <span style="font-size:18px; font-weight:700; color:#0B1220; letter-spacing:-.01em;">Через сколько можно вернуться в помещение после обработки?</span>
+            <span style="{{ icon1 }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div style="{{ ans1 }}"><p style="margin:0; padding:0 26px 24px; font-size:16px; line-height:1.65; color:#516076; font-weight:500;">Обычно от 1 до 4 часов в зависимости от используемого препарата. Для профессиональных инсектицидов время может составлять до 24 часов. После обработки необходимо тщательно проветрить помещение и провести влажную уборку.</p></div>
+        </div>
+
+        <div style="background:#fff; border:1px solid #E8EDF2; border-radius:18px; overflow:hidden; box-shadow:0 1px 2px rgba(15,23,42,.04);">
+          <button onClick="{{ toggle2 }}" class="nua-faq-btn" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 26px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:inherit;">
+            <span style="font-size:18px; font-weight:700; color:#0B1220; letter-spacing:-.01em;">Что делать, если насекомые вернулись?</span>
+            <span style="{{ icon2 }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div style="{{ ans2 }}"><p style="margin:0; padding:0 26px 24px; font-size:16px; line-height:1.65; color:#516076; font-weight:500;">Мы предоставляем гарантию по договору. Если проблема повторяется, повторная обработка проводится бесплатно.</p></div>
+        </div>
+
+        <div style="background:#fff; border:1px solid #E8EDF2; border-radius:18px; overflow:hidden; box-shadow:0 1px 2px rgba(15,23,42,.04);">
+          <button onClick="{{ toggle3 }}" class="nua-faq-btn" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 26px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:inherit;">
+            <span style="font-size:18px; font-weight:700; color:#0B1220; letter-spacing:-.01em;">Безопасна ли обработка для людей и животных?</span>
+            <span style="{{ icon3 }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div style="{{ ans3 }}"><p style="margin:0; padding:0 26px 24px; font-size:16px; line-height:1.65; color:#516076; font-weight:500;">Да, при строгом соблюдении наших инструкций все используемые сертифицированные препараты полностью безопасны.</p></div>
+        </div>
+
+        <div style="background:#fff; border:1px solid #E8EDF2; border-radius:18px; overflow:hidden; box-shadow:0 1px 2px rgba(15,23,42,.04);">
+          <button onClick="{{ toggle4 }}" class="nua-faq-btn" style="width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:24px 26px; background:transparent; border:none; cursor:pointer; text-align:left; font-family:inherit;">
+            <span style="font-size:18px; font-weight:700; color:#0B1220; letter-spacing:-.01em;">Работаете ли вы с юридическими лицами?</span>
+            <span style="{{ icon4 }}"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#047857" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg></span>
+          </button>
+          <div style="{{ ans4 }}"><p style="margin:0; padding:0 26px 24px; font-size:16px; line-height:1.65; color:#516076; font-weight:500;">Да, мы заключаем договоры, предоставляем закрывающие документы и протоколы лабораторного контроля.</p></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER / CONTACTS ============ -->
+  <footer id="contacts" class="nua-foot" style="background:#0B1220; padding:84px 28px 40px;">
+    <div style="max-width:1180px; margin:0 auto;">
+      <div class="nua-foot-grid" style="display:grid; grid-template-columns:1fr 1fr; gap:56px; align-items:start;">
+
+        <div>
+          <div style="display:inline-flex; align-items:center; gap:8px; font-size:13px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:#34D399; margin-bottom:16px;"><span style="width:18px; height:2px; background:#34D399;"></span>Контакты</div>
+          <h2 class="nua-h2" style="margin:0 0 12px; font-size:40px; font-weight:800; letter-spacing:-.025em; color:#fff;">Оставьте заявку</h2>
+          <p style="margin:0 0 28px; font-size:18px; line-height:1.6; color:#C4CCDA; font-weight:500;">Перезвоним, ответим на вопросы и подберём решение под ваш объект.</p>
+          <div style="display:flex; flex-direction:column; gap:12px; max-width:440px;">
+            <input class="nua-input" id="nua-lead-name" type="text" name="name" autocomplete="name" placeholder="Ваше имя">
+            <input class="nua-input" id="nua-lead-phone" type="tel" name="phone" autocomplete="tel" placeholder="Телефон">
+            <button class="nua-btn-mint" onClick="{{ sendLead }}" style="display:inline-flex; align-items:center; justify-content:center; gap:10px; padding:17px 32px; background:#10B981; color:#04241B; border:none; border-radius:13px; font-family:'Manrope', system-ui, sans-serif; font-size:16px; font-weight:800; cursor:pointer; box-shadow:0 16px 32px -14px rgba(16,185,129,.7);">
+              Получить бесплатную консультацию
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+            <span style="font-size:13px; line-height:1.55; color:#7E8AA0;">Нажимая кнопку, вы отправите заявку нам в WhatsApp. Отвечаем в течение 15 минут в рабочее время.</span>
+          </div>
+        </div>
+
+        <div class="nua-foot-cards" style="display:grid; grid-template-columns:1fr 1fr; gap:16px;">
+          <a href="tel:87027579130" class="nua-contact-card" style="display:flex; flex-direction:column; gap:6px; padding:22px; background:#0F1A2E; border:1px solid #1E2A40; border-radius:16px; text-decoration:none;">
+            <span style="font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#7E8AA0;">Телефон</span>
+            <span style="font-size:18px; font-weight:700; color:#fff;">8 702 757 91 30</span>
+          </a>
+          <a href="https://wa.me/77713730888" class="nua-contact-card" style="display:flex; flex-direction:column; gap:6px; padding:22px; background:#0F1A2E; border:1px solid #1E2A40; border-radius:16px; text-decoration:none;">
+            <span style="display:inline-flex; align-items:center; gap:6px; font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#7E8AA0;"><img src="assets/whatsapp_icon-icons.com_62756.svg" alt="" width="13" height="13" style="display:block;">WhatsApp</span>
+            <span style="font-size:18px; font-weight:700; color:#fff;">8 771 373 08 88</span>
+          </a>
+          <a href="mailto:dezin2013@bk.ru" class="nua-contact-card" style="display:flex; flex-direction:column; gap:6px; padding:22px; background:#0F1A2E; border:1px solid #1E2A40; border-radius:16px; text-decoration:none;">
+            <span style="font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#7E8AA0;">Email</span>
+            <span style="font-size:18px; font-weight:700; color:#fff;">dezin2013@bk.ru</span>
+          </a>
+          <a href="https://instagram.com/dez_atyrau06" class="nua-contact-card" style="display:flex; flex-direction:column; gap:6px; padding:22px; background:#0F1A2E; border:1px solid #1E2A40; border-radius:16px; text-decoration:none;">
+            <span style="font-size:12px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:#7E8AA0;">Instagram</span>
+            <span style="font-size:18px; font-weight:700; color:#fff;">@dez_atyrau06</span>
+          </a>
+        </div>
+      </div>
+
+      <div style="margin-top:64px; padding-top:28px; border-top:1px solid #1E2A40; display:flex; align-items:center; justify-content:space-between; gap:20px; flex-wrap:wrap;">
+        <div style="display:flex; align-items:center; gap:13px;">
+          <div style="background:#fff; border-radius:10px; padding:6px 10px;"><img src="assets/Logo%20Nur%20Aru/craiyon_235217_image%201.png" alt="НУР-АРУ" style="height:26px; width:auto; display:block;"></div>
+          <span style="font-size:14px; font-weight:600; color:#C4CCDA;">ТОО «Дезинфекция Нур-Ару»</span>
+        </div>
+        <span style="font-size:13px; color:#7E8AA0;">© 2026 Все права защищены. г. Атырау.</span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: { &quot;width&quot;: 1280, &quot;height&quot;: 900 }
+}">
+class Component extends DCLogic {
+  state = { openFaq: 0, menuOpen: false };
+
+  componentDidMount() {
+    // Scroll reveal: html gets .nua-io only when the observer is live,
+    // so content stays visible if JS never runs.
+    if ('IntersectionObserver' in window) {
+      document.documentElement.classList.add('nua-io');
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add('nua-in'); io.unobserve(e.target); }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      document.querySelectorAll('.nua-rev').forEach((el) => io.observe(el));
+      this._io = io;
+    }
+  }
+
+  componentWillUnmount() {
+    if (this._io) this._io.disconnect();
+  }
+
+  iconStyle(i) {
+    return {
+      display: 'inline-flex',
+      flexShrink: 0,
+      transform: this.state.openFaq === i ? 'rotate(180deg)' : 'rotate(0deg)',
+      transition: 'transform .3s ease',
+    };
+  }
+
+  answerStyle(i) {
+    const open = this.state.openFaq === i;
+    return {
+      maxHeight: open ? '560px' : '0px',
+      opacity: open ? 1 : 0,
+      overflow: 'hidden',
+      transition: 'max-height .35s ease, opacity .3s ease',
+    };
+  }
+
+  renderVals() {
+    const toggle = (i) => () => this.setState(s => ({ openFaq: s.openFaq === i ? -1 : i }));
+    const open = this.state.menuOpen;
+    const sendLead = () => {
+      const nameEl = document.getElementById('nua-lead-name');
+      const phoneEl = document.getElementById('nua-lead-phone');
+      const name = nameEl && nameEl.value ? nameEl.value.trim() : '';
+      const phone = phoneEl && phoneEl.value ? phoneEl.value.trim() : '';
+      let text = 'Здравствуйте! Хочу оставить заявку на обработку.';
+      if (name) text += ' Меня зовут ' + name + '.';
+      if (phone) text += ' Мой телефон: ' + phone + '.';
+      window.open('https://wa.me/77713730888?text=' + encodeURIComponent(text), '_blank', 'noopener');
+    };
+    return {
+      toggle0: toggle(0), toggle1: toggle(1), toggle2: toggle(2), toggle3: toggle(3), toggle4: toggle(4),
+      icon0: this.iconStyle(0), icon1: this.iconStyle(1), icon2: this.iconStyle(2), icon3: this.iconStyle(3), icon4: this.iconStyle(4),
+      ans0: this.answerStyle(0), ans1: this.answerStyle(1), ans2: this.answerStyle(2), ans3: this.answerStyle(3), ans4: this.answerStyle(4),
+      toggleMenu: () => this.setState(s => ({ menuOpen: !s.menuOpen })),
+      closeMenu: () => this.setState({ menuOpen: false }),
+      burgerIcon: { display: 'inline-flex', transition: 'transform .3s ease', transform: open ? 'rotate(90deg)' : 'none' },
+      menuPanel: { overflow: 'hidden', maxHeight: open ? '440px' : '0px', opacity: open ? 1 : 0, transition: 'max-height .35s ease, opacity .25s ease' },
+      sendLead: sendLead,
+    };
+  }
+}
+</script>
+</body>
+</html>
